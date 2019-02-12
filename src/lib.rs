@@ -41,7 +41,7 @@ impl CardPattern {
         }
 
         if !self.is_prefix_valid(card_number) {
-            return Err(ValidationError::InvalidLength);
+            return Err(ValidationError::InvalidPrefix);
         }
 
         Ok(self.card_type)
